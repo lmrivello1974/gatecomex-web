@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Revestimientos | GateComex — Importación directa Bahía Blanca</title>
-<meta name="description" content="Catálogo de Revestimientos importados. Consultá formato, terminación y disponibilidad.">
+<title>Pisos | GateComex — Importación directa Bahía Blanca</title>
+<meta name="description" content="Catálogo de pisos: porcelanatos y gres cerámicos importados. Consultá formato, terminación y disponibilidad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -15,8 +15,8 @@
   <nav class="wrap">
     <a href="index.html" class="logo"><span class="logo-top"><span class="mark"></span>GATECOMEX</span><img src="images/alfa-gate-logo.png" alt="Alfa Gate" class="logo-alfa"></a>
     <div class="navlinks">
-      <a href="pisos.html">Pisos</a>
-      <a href="revestimientos.html" class="active">Revestimientos</a>
+      <a href="pisos.html" class="active">Pisos</a>
+      <a href="revestimientos.html">Revestimientos</a>
       <a href="flotantes.html">Flotantes</a>
       <a href="contacto.html">Contacto</a>
     </div>
@@ -26,14 +26,15 @@
 
 <section class="page-hero">
   <div class="wrap">
-    <span class="eyebrow">PARED — INTERIOR / FACHADA</span>
-    <h1>Revestimientos</h1>
-    <p>Cerámicos para baño, cocina y fachada — texturas, símil piedra y terminaciones brillantes. Filtrá para encontrar lo que necesitás.</p>
+    <span class="eyebrow">PISO — PORCELANATOS Y GRES</span>
+    <h1>Pisos</h1>
+    <p>Porcelanatos y gres cerámicos, gran formato, símil mármol, madera y cemento — importación directa con stock permanente. Elegí una línea y filtrá para encontrar lo que necesitás.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
+    <div class="filter-bar filter-bar-sub" id="subFilterBar"></div>
     <div class="filter-bar" id="filterBar"></div>
     <div class="catalog-grid" id="catalogGrid"></div>
     <p class="catalog-empty" id="catalogEmpty">No tenemos productos en esta categoría por ahora — consultanos por WhatsApp.</p>
@@ -55,7 +56,7 @@
 </a>
 
 <script src="catalog.js"></script>
-<script>initCatalog('revestimientos');</script>
+<script>initCatalog('pisos-ceramicos');</script>
 
 </body>
 </html>
