@@ -112,7 +112,11 @@ nav.wrap{
 .stats-grid > div:first-child{border-left:none; padding-left:0;}
 
 /* FILTER BAR (category pages) */
-.filter-bar{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:44px;}
+.filter-bar{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;}
+.filter-label{
+  display:block; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+  color:#8A8478; margin-bottom:8px;
+}
 .filter-chip{
   font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase;
   padding:9px 16px; border:1px solid var(--line); background:var(--paper); cursor:pointer; color:var(--ink);
@@ -132,7 +136,7 @@ nav.wrap{
 }
 
 /* CATALOG */
-.catalog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px;}
+.catalog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:24px;}
 .prod-card{background:var(--paper); border:1px solid var(--line); transition:opacity .2s ease;}
 .prod-card.hidden{display:none;}
 .prod-photo{aspect-ratio:1/1; position:relative; overflow:hidden; cursor:zoom-in;}

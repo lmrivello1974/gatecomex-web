@@ -43,7 +43,7 @@ function productCard(p) {
   const imgs = fotos.map((f, i) => `<img src="images/productos/${f}" data-file="${f}" alt="${p.nombre}" class="${i === 0 ? 'active' : ''}" loading="lazy">`).join('');
 
   return `
-  <div class="prod-card" data-tipologia="${p['tipología'] || ''}" data-subcategoria="${p.subcategoria || ''}">
+  <div class="prod-card" data-tipologia="${p['tipología'] || ''}" data-formato="${p.formato || ''}" data-subcategoria="${p.subcategoria || ''}">
     ${p.subcategoria ? `<span class="prod-subcat">${p.subcategoria}</span>` : ''}
     <div class="prod-photo" id="${carouselId}">
       ${imgs}
@@ -118,7 +118,8 @@ function updateLightboxImg() {
 
 async function initCatalog(categoria) {
   const grid = document.getElementById('catalogGrid');
-  const filterBar = document.getElementById('filterBar');
+  const filterBar = document.getElementById('filterBar'); // filtro por tipología/estilo
+  const formatoBar = document.getElementById('formatoFilterBar'); // filtro por medida
   const subFilterBar = document.getElementById('subFilterBar'); // puede no existir en categorías sin subcategoría
   const empty = document.getElementById('catalogEmpty');
   if (!grid) return;
@@ -137,11 +138,12 @@ async function initCatalog(categoria) {
     grid.innerHTML = '';
     if (subFilterBar) subFilterBar.innerHTML = '';
     filterBar.innerHTML = '';
+    if (formatoBar) formatoBar.innerHTML = '';
     empty.style.display = 'block';
     return;
   }
 
-  const state = { sub: 'todas', filtro: 'todos' };
+  const state = { sub: 'todas', tipologia: 'todos', formato: 'todos' };
 
   // Subcategoría (ej: Porcelanatos / Gres Cerámicos) — solo si hay más de un valor distinto
   const subValores = [...new Set(all.map(p => p.subcategoria).filter(Boolean))];
@@ -157,33 +159,45 @@ async function initCatalog(categoria) {
   grid.innerHTML = all.map(productCard).join('');
   const cards = grid.querySelectorAll('.prod-card');
 
-  function renderFiltroChips() {
+  function renderFacetBars() {
     const visibles = state.sub === 'todas' ? all : all.filter(p => p.subcategoria === state.sub);
-    const valores = [...new Set(visibles.map(p => p['tipología']).filter(Boolean))];
-    filterBar.innerHTML = '<button class="filter-chip active" data-filter="todos">Todos</button>' +
-      valores.map(v => `<button class="filter-chip" data-filter="${v}">${v}</button>`).join('');
-    state.filtro = 'todos';
-    bindFiltroChips();
+
+    // Estilo (tipología)
+    const tipValores = [...new Set(visibles.map(p => p['tipología']).filter(Boolean))];
+    filterBar.innerHTML = '<button class="filter-chip active" data-tip="todos">Todos</button>' +
+      tipValores.map(v => `<button class="filter-chip" data-tip="${v}">${v}</button>`).join('');
+    state.tipologia = 'todos';
+    bindFacetChips(filterBar, 'tip', 'tipologia');
+
+    // Medida (formato)
+    if (formatoBar) {
+      const formValores = [...new Set(visibles.map(p => p.formato).filter(Boolean))];
+      formatoBar.innerHTML = '<button class="filter-chip active" data-form="todos">Todas las medidas</button>' +
+        formValores.map(v => `<button class="filter-chip" data-form="${v}">${v}</button>`).join('');
+      state.formato = 'todos';
+      bindFacetChips(formatoBar, 'form', 'formato');
+    }
   }
 
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
       const matchSub = state.sub === 'todas' || card.dataset.subcategoria === state.sub;
-      const matchFiltro = state.filtro === 'todos' || card.dataset.tipologia === state.filtro;
-      const match = matchSub && matchFiltro;
+      const matchTip = state.tipologia === 'todos' || card.dataset.tipologia === state.tipologia;
+      const matchForm = state.formato === 'todos' || card.dataset.formato === state.formato;
+      const match = matchSub && matchTip && matchForm;
       card.classList.toggle('hidden', !match);
       if (match) visible++;
     });
     empty.style.display = visible === 0 ? 'block' : 'none';
   }
 
-  function bindFiltroChips() {
-    filterBar.querySelectorAll('.filter-chip').forEach(chip => {
+  function bindFacetChips(bar, dataKey, stateKey) {
+    bar.querySelectorAll('.filter-chip').forEach(chip => {
       chip.addEventListener('click', () => {
-        filterBar.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        bar.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
-        state.filtro = chip.dataset.filter;
+        state[stateKey] = chip.dataset[dataKey];
         applyFilters();
       });
     });
@@ -195,13 +209,13 @@ async function initCatalog(categoria) {
         subFilterBar.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         state.sub = chip.dataset.sub;
-        renderFiltroChips();
+        renderFacetBars();
         applyFilters();
       });
     });
   }
 
-  renderFiltroChips();
+  renderFacetBars();
   applyFilters();
 
   // Carruseles: click en los puntitos cambia la foto activa
