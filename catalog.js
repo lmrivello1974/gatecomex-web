@@ -38,14 +38,13 @@ function waLink(nombre) {
 function productCard(p) {
   const fotos = [p.foto1, p.foto2, p.foto3].filter(Boolean);
   const specs = (p.especificaciones || '').split('|').map(s => s.trim()).filter(Boolean).slice(0, 5);
-  const carouselId = 'car-' + p.id;
   const dots = fotos.map((f, i) => `<button class="dot ${i === 0 ? 'active' : ''}" data-idx="${i}" aria-label="Foto ${i+1}"></button>`).join('');
   const imgs = fotos.map((f, i) => `<img src="images/productos/${f}" data-file="${f}" alt="${p.nombre}" class="${i === 0 ? 'active' : ''}" loading="lazy">`).join('');
 
   return `
   <div class="prod-card" data-tipologia="${p['tipología'] || ''}" data-formato="${p.formato || ''}" data-subcategoria="${p.subcategoria || ''}">
     ${p.subcategoria ? `<span class="prod-subcat">${p.subcategoria}</span>` : ''}
-    <div class="prod-photo" id="${carouselId}">
+    <div class="prod-photo">
       ${imgs}
       ${fotos.length > 1 ? `<div class="prod-dots">${dots}</div>` : ''}
     </div>
@@ -110,8 +109,7 @@ function moveLightbox(delta) {
 function updateLightboxImg() {
   const { fotos, idx } = lightboxState;
   const img = document.querySelector('#lightbox .lb-img');
-  const src = (typeof PHOTOS_B64 !== 'undefined' && PHOTOS_B64[fotos[idx]]) || ('images/productos/' + fotos[idx]);
-  img.src = src;
+  img.src = 'images/productos/' + fotos[idx];
   const nav = document.querySelectorAll('#lightbox .lb-prev, #lightbox .lb-next');
   nav.forEach(b => b.style.display = fotos.length > 1 ? 'flex' : 'none');
 }
@@ -126,7 +124,7 @@ async function initCatalog(categoria) {
 
   let all;
   try {
-    const res = await fetch('products.csv');
+    const res = await fetch('products.csv?v=' + Date.now(), { cache: 'no-store' });
     const text = await res.text();
     all = parseCSV(text).filter(p => p.categoria === categoria);
   } catch (e) {
@@ -162,14 +160,12 @@ async function initCatalog(categoria) {
   function renderFacetBars() {
     const visibles = state.sub === 'todas' ? all : all.filter(p => p.subcategoria === state.sub);
 
-    // Estilo (tipología)
     const tipValores = [...new Set(visibles.map(p => p['tipología']).filter(Boolean))];
     filterBar.innerHTML = '<button class="filter-chip active" data-tip="todos">Todos</button>' +
       tipValores.map(v => `<button class="filter-chip" data-tip="${v}">${v}</button>`).join('');
     state.tipologia = 'todos';
     bindFacetChips(filterBar, 'tip', 'tipologia');
 
-    // Medida (formato)
     if (formatoBar) {
       const formValores = [...new Set(visibles.map(p => p.formato).filter(Boolean))];
       formatoBar.innerHTML = '<button class="filter-chip active" data-form="todos">Todas las medidas</button>' +
@@ -230,7 +226,6 @@ async function initCatalog(categoria) {
         photoBox.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
       });
     });
-    // Click en la foto (no en los puntitos) abre el lightbox ampliado
     photoBox.addEventListener('click', () => {
       const activeIdx = [...imgs].findIndex(im => im.classList.contains('active'));
       openLightbox(fotos, activeIdx < 0 ? 0 : activeIdx);
