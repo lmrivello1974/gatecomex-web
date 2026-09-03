@@ -109,7 +109,7 @@ function moveLightbox(delta) {
 function updateLightboxImg() {
   const { fotos, idx } = lightboxState;
   const img = document.querySelector('#lightbox .lb-img');
-  img.src = 'images/productos/' + fotos[idx];
+  img.src = fotos[idx];
   const nav = document.querySelectorAll('#lightbox .lb-prev, #lightbox .lb-next');
   nav.forEach(b => b.style.display = fotos.length > 1 ? 'flex' : 'none');
 }
@@ -217,7 +217,7 @@ async function initCatalog(categoria) {
   // Carruseles: click en los puntitos cambia la foto activa
   grid.querySelectorAll('.prod-photo').forEach(photoBox => {
     const imgs = photoBox.querySelectorAll('img');
-    const fotos = [...imgs].map(im => im.dataset.file);
+    const fotos = [...imgs].map(im => 'images/productos/' + im.dataset.file);
     photoBox.querySelectorAll('.dot').forEach(dot => {
       dot.addEventListener('click', (e) => {
         e.stopPropagation();
