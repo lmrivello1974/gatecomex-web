@@ -90,6 +90,8 @@ margin-right:26px;
 .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:52px; gap:24px; flex-wrap:wrap;}
 .section-head h2{font-size:clamp(28px,3.6vw,42px); font-weight:900;}
 .section-head .desc{max-width:380px; font-size:15px; color:#54504A; line-height:1.6;}
+.section-head-stack{flex-direction:column; align-items:flex-start;}
+.section-head-stack .desc{max-width:560px; margin-top:14px; font-size:16px;}
 
 /* CATEGORY TILE GRID (home) */
 .tile-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:3px; background:var(--ink); border:3px solid var(--ink);}
