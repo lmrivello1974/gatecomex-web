@@ -182,6 +182,14 @@ transition:background .15s ease;
 .catalog-foot{margin-top:48px; text-align:center;}
 .catalog-empty{display:none; text-align:center; padding:60px 0; color:#8A8478; font-family:'IBM Plex Mono',monospace; font-size:13px;}
 
+/* LINK "VER DEPÓSITO" dentro de la franja de estadísticas */
+.stock-link{
+display:inline-block; margin-top:12px; font-family:'IBM Plex Mono',monospace; font-size:12px;
+letter-spacing:0.05em; text-transform:uppercase; color:#EBC8B2; border-bottom:1px solid rgba(235,200,178,0.4);
+padding-bottom:2px; transition:border-color .15s ease;
+}
+.stock-link:hover{border-color:#EBC8B2;}
+
 /* NUESTRAS OBRAS */
 .obra-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
 .obra-card{display:flex; flex-direction:column;}

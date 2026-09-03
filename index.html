@@ -83,7 +83,7 @@
 <div><div class="stat-num">12+</div><div class="stat-label">Años de experiencia</div></div>
 <div><div class="stat-num">100%</div><div class="stat-label">Importación directa de fábrica</div></div>
 <div><div class="stat-num">AAA</div><div class="stat-label">Trazabilidad y calidad certificada</div></div>
-<div><div class="stat-num">STOCK</div><div class="stat-label">Permanente, con los precios más competitivos del mercado</div></div>
+<div><div class="stat-num">STOCK</div><div class="stat-label">Permanente, con los precios más competitivos del mercado</div><a href="#" id="ver-deposito" class="stock-link">Ver depósitos →</a></div>
 </div>
 </section>
 
@@ -234,6 +234,13 @@ document.querySelectorAll('.obra-photo').forEach(photoBox => {
     const activeIdx = [...imgs].findIndex(im => im.classList.contains('active'));
     openLightbox(fotos, activeIdx < 0 ? 0 : activeIdx);
   });
+});
+
+// Fotos de depósito: se abren directo desde el link "Ver depósito"
+const depoFotos = ["images/depo-1.jpg", "images/depo-2.jpg", "images/depo-3.jpg", "images/depo-4.jpg"];
+document.getElementById('ver-deposito').addEventListener('click', (e) => {
+  e.preventDefault();
+  openLightbox(depoFotos, 0);
 });
 </script>
 
