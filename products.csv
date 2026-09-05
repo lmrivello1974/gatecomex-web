@@ -1,12 +1,72 @@
-id,categoria,subcategoria,nombre,tipologÃ­a,formato,terminacion,uso,especificaciones,foto1,foto2,foto3
-p001,pisos-ceramicos,Gres Ceramicos,CONCRET GRAY,CONCRETO,68X68,SATINADO,Interior- Exterior,"8,5mm espesor",CONCRET GRAY (1).png,CONCRET GRAY (2).png,CONCRET GRAY (3).png
-p002,pisos-ceramicos,Gres Ceramicos,DOHA PLUS,CARRARA,68X68,SATINADO,Interior- Exterior,"8,5mm espesor",DOHA PLUS (1).png,DOHA PLUS (2).png,DOHA PLUS (3).png
-p003,pisos-ceramicos,Gres Ceramicos,AVORIO GRAY,PLANO,68X68,SATINADO,Interior- Exterior,"8,5mm espesor",AVORIO GRAY (1).png,AVORIO GRAY (2).png,
-p004,pisos-ceramicos,Gres Ceramicos,PIERO GRIS,CARRARA,68X68,SATINADO,Interior- Exterior,"8,5mm espesor",PIERO GRIS (1).png,PIERO GRIS (2).png,PIERO GRIS (3).png
-p005,pisos-ceramicos,Gres Ceramicos,PELLEGRINI,PLANO,68X68,SATINADO,Interior- Exterior,"8,5mm espesor",PELLEGRINI (1).png,PELLEGRINI (2).png,PELLEGRINI (3).png
-p006,pisos-ceramicos,Gres Ceramicos,SLATE,LAJA,68X68,RUGOSO,Interior- Exterior,"8,5mm espesor",SLATE (1).png,SLATE (2).png,SLATE (3).png
-p007,pisos-ceramicos,Gres Ceramicos,CONCRET PULIDO,CONCRETO,66X66,PULIDO,Interior,"8,5mm espesor",CONCRET PULIDO (1).png,CONCRET PULIDO (2).png,CONCRET PULIDO (3).png
-p008,pisos-ceramicos,Gres Ceramicos,DOHA PLUS PULIDO,CARRARA,66X66,PULIDO,Interior,"8,5mm espesor",DOHA PLUS PULIDO (1).png,DOHA PLUS PULIDO (2).png,DOHA PLUS PULIDO (3).png
-p009,pisos-ceramicos,Gres Ceramicos,VISION GRAY PLUS,CONCRETO,58X118,SATINADO,Interior- Exterior,10mm espesor,VISION GRAY PLUS (1).png,VISION GRAY PLUS (2).png,VISION GRAY PLUS (3).png
-p010,pisos-ceramicos,Gres Ceramicos,MAHAL OFF PLUS,PLANO,58X118,SATINADO,Interior- Exterior,10mm espesor,MAHAL OFF PLUS (1).png,MAHAL OFF PLUS (2).png,MAHAL OFF PLUS (3).png
-p011,pisos-ceramicos,Gres Ceramicos,OLIMPO PLUS,CARRARA,58X118,SATINADO,Interior- Exterior,10mm espesor,OLIMPO PLUS (1).png,OLIMPO PLUS (2).png,
+id;categoria;subcategoria;nombre;tipología;formato;terminacion;uso;especificaciones;foto1;foto2;foto3
+p001;pisos-ceramicos;Gres Ceramicos;CONCRET GRAY;CONCRETO;68X68;SATINADO;Interior- Exterior;8,5mm espesor;CONCRET GRAY (1).png;CONCRET GRAY (2).png;CONCRET GRAY (3).png
+p002;pisos-ceramicos;Gres Ceramicos;DOHA PLUS;CARRARA;68X68;SATINADO;Interior- Exterior;8,5mm espesor;DOHA PLUS (1).png;DOHA PLUS (2).png;DOHA PLUS (3).png
+p003;pisos-ceramicos;Gres Ceramicos;AVORIO GRAY;PLANO;68X68;SATINADO;Interior- Exterior;8,5mm espesor;AVORIO GRAY (1).png;AVORIO GRAY (2).png;
+p004;pisos-ceramicos;Gres Ceramicos;PIERO GRIS;CARRARA;68X68;SATINADO;Interior- Exterior;8,5mm espesor;PIERO GRIS (1).png;PIERO GRIS (2).png;PIERO GRIS (3).png
+p005;pisos-ceramicos;Gres Ceramicos;PELLEGRINI;PLANO;68X68;SATINADO;Interior- Exterior;8,5mm espesor;PELLEGRINI (1).png;PELLEGRINI (2).png;PELLEGRINI (3).png
+p006;pisos-ceramicos;Gres Ceramicos;SLATE;LAJA;68X68;RUGOSO;Interior- Exterior;8,5mm espesor;SLATE (1).png;SLATE (2).png;SLATE (3).png
+p007;pisos-ceramicos;Gres Ceramicos;CONCRET PULIDO;CONCRETO;66X66;PULIDO;Interior;8,5mm espesor;CONCRET PULIDO (1).png;CONCRET PULIDO (2).png;CONCRET PULIDO (3).png
+p008;pisos-ceramicos;Gres Ceramicos;DOHA PLUS PULIDO;CARRARA;66X66;PULIDO;Interior;8,5mm espesor;DOHA PLUS PULIDO (1).png;DOHA PLUS PULIDO (2).png;DOHA PLUS PULIDO (3).png
+p009;pisos-ceramicos;Gres Ceramicos;VISION GRAY PLUS;CONCRETO;58X118;SATINADO;Interior- Exterior;10mm espesor;VISION GRAY PLUS (1).png;VISION GRAY PLUS (2).png;VISION GRAY PLUS (3).png
+p010;pisos-ceramicos;Gres Ceramicos;MAHAL OFF PLUS;PLANO;58X118;SATINADO;Interior- Exterior;10mm espesor;MAHAL OFF PLUS (1).png;MAHAL OFF PLUS (2).png;MAHAL OFF PLUS (3).png
+p011;pisos-ceramicos;Gres Ceramicos;OLIMPO PLUS;CARRARA;58X118;SATINADO;Interior- Exterior;10mm espesor;OLIMPO PLUS (1).png;OLIMPO PLUS (2).png;
+p012;pisos-ceramicos;Gres Ceramicos;BOTANIC ;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;BOTANIC 1.png;BOTANIC 2.png;BOTANIC 3.png
+p013;pisos-ceramicos;Gres Ceramicos;BOTANIC GRIS;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;BOTANIC G1.png;BOTANIC G2.png;BOTANIC G3.png
+p014;pisos-ceramicos;Gres Ceramicos;CARAMEL;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;CARAMEL1.png;CARAMEL2.png;CARAMEL3.png
+p015;pisos-ceramicos;Gres Ceramicos;INDIANA PLUS;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;INDIANA1.png;INDIANA2.png;INDIANA3.png
+p016;pisos-ceramicos;Gres Ceramicos;NOGAL ;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;NOGAL1.jpg;NOGAL2.png;NOGAL3.png
+p017;pisos-ceramicos;Gres Ceramicos;SANTORO ;MADERA;29X119;SATINADO;Interior- Exterior;9mm espesor;SSANTORO1.png;SSANTORO2.png;SSANTORO3.png
+p018;pisos-ceramicos;Gres Ceramicos;FESTI;PLANO;60X60;PULIDO;Interior;8mm espesor;FESTI 1.png;FESTI 2.png;FESTI 3.png
+p019;pisos-ceramicos;Gres Ceramicos;METROPOLE;PLANO;60X60;PULIDO;Interior;8mm espesor;METRO 1.png;METRO2.png;METRO3.png
+p020;pisos-ceramicos;Gres Ceramicos;MILANO ;CARRARA;60X60;PULIDO;Interior;8mm espesor;MILANO 1.png;MILANO 2.png;MILANO 3.png
+p021;pisos-ceramicos;Gres Ceramicos;NERO ;CARRARA;60X60;PULIDO;Interior;8mm espesor;NERO 1.png;NERO 2.png;NERO 3.png
+p022;pisos-ceramicos;Gres Ceramicos;STUDIO ;CARRARA;60X60;PULIDO;Interior;8mm espesor;STUDIO1.png;STUDIO2.png;STUDIO3.png
+p023;pisos-ceramicos;Gres Ceramicos;DUNE CINZA;PLANO;62X120;PULIDO;Interior;9mm espesor;DUNE1.png;DUNE2.png;DUNE3.png
+p024;pisos-ceramicos;Gres Ceramicos;METROPOLE;PLANO;62X120;SATINADO;Interior- Exterior;9mm espesor;METROPOLES1.png;METROPOLES2.png;METROPOLES3.png
+p025;pisos-ceramicos;Gres Ceramicos;MILANO PLUS;CARRARA;62X120;PULIDO ;Interior;9mm espesor;MILANOPLUS 1.png;MILANOPLUS 2.png;MILANOPLUS 3.png
+p026;pisos-ceramicos;Gres Ceramicos;MILANO ;CARRARA;62X120;SATINADO;Interior- Exterior;9mm espesor;MILANOS120A.png;MILANOS120B.png;
+p027;pisos-ceramicos;Gres Ceramicos;PETROLEO ;PLANO;62X120;PULIDO;Interior;9mm espesor;PETROLEO120A.png;PETROLEO120B.png;
+p028;pisos-ceramicos;Gres Ceramicos;URBANO ;PLANO;62X120;SATINADO;Interior- Exterior;9mm espesor;URBAN1.png;URBAN2.png;URBAN3.png
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
