@@ -10,20 +10,27 @@ p008,pisos-ceramicos,Gres Ceramicos,DOHA PLUS PULIDO,CARRARA,66X66,PULIDO,Interi
 p009,pisos-ceramicos,Gres Ceramicos,VISION GRAY PLUS,CONCRETO,58X118,SATINADO,Interior- Exterior,10mm espesor,VISION GRAY PLUS (1).png,VISION GRAY PLUS (2).png,VISION GRAY PLUS (3).png
 p010,pisos-ceramicos,Gres Ceramicos,MAHAL OFF PLUS,PLANO,58X118,SATINADO,Interior- Exterior,10mm espesor,MAHAL OFF PLUS (1).png,MAHAL OFF PLUS (2).png,MAHAL OFF PLUS (3).png
 p011,pisos-ceramicos,Gres Ceramicos,OLIMPO PLUS,CARRARA,58X118,SATINADO,Interior- Exterior,10mm espesor,OLIMPO PLUS (1).png,OLIMPO PLUS (2).png,
-p012,pisos-ceramicos,Gres Ceramicos,BOTANIC ,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,BOTANIC 1.png,BOTANIC 2.png,BOTANIC 3.png
+p012,pisos-ceramicos,Gres Ceramicos,BOTANIC,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,BOTANIC 1.png,BOTANIC 2.png,BOTANIC 3.png
 p013,pisos-ceramicos,Gres Ceramicos,BOTANIC GRIS,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,BOTANIC G1.png,BOTANIC G2.png,BOTANIC G3.png
 p014,pisos-ceramicos,Gres Ceramicos,CARAMEL,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,CARAMEL1.png,CARAMEL2.png,CARAMEL3.png
 p015,pisos-ceramicos,Gres Ceramicos,INDIANA PLUS,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,INDIANA1.png,INDIANA2.png,INDIANA3.png
-p016,pisos-ceramicos,Gres Ceramicos,NOGAL ,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,NOGAL1.jpg,NOGAL2.png,NOGAL3.png
-p017,pisos-ceramicos,Gres Ceramicos,SANTORO ,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,SSANTORO1.png,SSANTORO2.png,SSANTORO3.png
+p016,pisos-ceramicos,Gres Ceramicos,NOGAL,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,NOGAL1.jpg,NOGAL2.png,NOGAL3.png
+p017,pisos-ceramicos,Gres Ceramicos,SANTORO,MADERA,29X119,SATINADO,Interior- Exterior,9mm espesor,SSANTORO1.png,SSANTORO2.png,SSANTORO3.png
 p018,pisos-ceramicos,Gres Ceramicos,FESTI,PLANO,60X60,PULIDO,Interior,8mm espesor,FESTI 1.png,FESTI 2.png,FESTI 3.png
 p019,pisos-ceramicos,Gres Ceramicos,METROPOLE,PLANO,60X60,PULIDO,Interior,8mm espesor,METRO 1.png,METRO2.png,METRO3.png
-p020,pisos-ceramicos,Gres Ceramicos,MILANO ,CARRARA,60X60,PULIDO,Interior,8mm espesor,MILANO 1.png,MILANO 2.png,MILANO 3.png
-p021,pisos-ceramicos,Gres Ceramicos,NERO ,CARRARA,60X60,PULIDO,Interior,8mm espesor,NERO 1.png,NERO 2.png,NERO 3.png
-p022,pisos-ceramicos,Gres Ceramicos,STUDIO ,CARRARA,60X60,PULIDO,Interior,8mm espesor,STUDIO1.png,STUDIO2.png,STUDIO3.png
+p020,pisos-ceramicos,Gres Ceramicos,MILANO,CARRARA,60X60,PULIDO,Interior,8mm espesor,MILANO 1.png,MILANO 2.png,MILANO 3.png
+p021,pisos-ceramicos,Gres Ceramicos,NERO,CARRARA,60X60,PULIDO,Interior,8mm espesor,NERO 1.png,NERO 2.png,NERO 3.png
+p022,pisos-ceramicos,Gres Ceramicos,STUDIO,CARRARA,60X60,PULIDO,Interior,8mm espesor,STUDIO1.png,STUDIO2.png,STUDIO3.png
 p023,pisos-ceramicos,Gres Ceramicos,DUNE CINZA,PLANO,62X120,PULIDO,Interior,9mm espesor,DUNE1.png,DUNE2.png,DUNE3.png
 p024,pisos-ceramicos,Gres Ceramicos,METROPOLE,PLANO,62X120,SATINADO,Interior- Exterior,9mm espesor,METROPOLES1.png,METROPOLES2.png,METROPOLES3.png
-p025,pisos-ceramicos,Gres Ceramicos,MILANO PLUS,CARRARA,62X120,PULIDO ,Interior,9mm espesor,MILANOPLUS 1.png,MILANOPLUS 2.png,MILANOPLUS 3.png
-p026,pisos-ceramicos,Gres Ceramicos,MILANO ,CARRARA,62X120,SATINADO,Interior- Exterior,9mm espesor,MILANOS120A.png,MILANOS120B.png,
-p027,pisos-ceramicos,Gres Ceramicos,PETROLEO ,PLANO,62X120,PULIDO,Interior,9mm espesor,PETROLEO120A.png,PETROLEO120B.png,
-p028,pisos-ceramicos,Gres Ceramicos,URBANO ,PLANO,62X120,SATINADO,Interior- Exterior,9mm espesor,URBAN1.png,URBAN2.png,URBAN3.png
+p025,pisos-ceramicos,Gres Ceramicos,MILANO PLUS,CARRARA,62X120,PULIDO,Interior,9mm espesor,MILANOPLUS 1.png,MILANOPLUS 2.png,MILANOPLUS 3.png
+p026,pisos-ceramicos,Gres Ceramicos,MILANO,CARRARA,62X120,SATINADO,Interior- Exterior,9mm espesor,MILANOS120A.png,MILANOS120B.png,
+p027,pisos-ceramicos,Gres Ceramicos,PETROLEO,PLANO,62X120,PULIDO,Interior,9mm espesor,PETROLEO120A.png,PETROLEO120B.png,
+p028,pisos-ceramicos,Gres Ceramicos,URBANO,PLANO,62X120,SATINADO,Interior- Exterior,9mm espesor,URBAN1.png,URBAN2.png,URBAN3.png
+p029,flotantes,SPC,9300,MADERA,"18,2X122",SATINADO,Interior,5mm con manta IXPE  ALTO TRANSITO,9300 (1).png,9300 (2).png,9300 (3).png
+p030,flotantes,SPC,9304,MADERA,"18,2X123",SATINADO,Interior,5mm con manta IXPE  ALTO TRANSITO,9304 (1).png,9304 (2).png,9304 (3).png
+p031,flotantes,SPC,ND004,MADERA,"18,2X124",SATINADO,Interior,5mm con manta IXPE  ALTO TRANSITO,ND (1).png,ND (2).png,ND (3).png
+p032,flotantes,SPC,1001,MADERA,"18,2X125",SATINADO,Interior,5mm con manta IXPE  ALTO TRANSITO,1001 (1).png,1001 (2).png,1001 (3).png
+p033,flotantes,SPC,1300,MADERA,"18,2X126",SATINADO,Interior,5mm con manta IXPE  ALTO TRANSITO,1300 (1).png,1300 (2).png,1300 (3).png
+p034,revestimientos,PVC MARBLE,CARRARA,CARRARA,"1,22X2,44",PULIDO,interior,3mm,CARRA (1).png,CARRA (2).png,CARRA (3).png
+p035,revestimientos,PVC MARBLE,GRIS,CARRARA,"1,22X2,45",PULIDO,interior,3mm,GRIS (1).png,GRIS (2).png,GRIS (3).png
